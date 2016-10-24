@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册用户</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body{
+            background:url("Img/1.jpg") no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed; /*指定单个图片铺满屏幕*/
+
+        }
+        div{
+            width: 260px;
+            height: 200px;
+            /*border:1px solid black;*/
+            position: relative;
+            top: 200px;
+            left: 500px;
+        }
+        form{
+            text-align: center;
+            line-height: 25px;
+            position: absolute;
+            top: 45px;
+            color: aqua;
+            font-size: 15px;
+        }
+        p{
+            text-align:center;
+            color:pink;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>欢迎注册</p>
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            用户名:<input type="text" placeholder="请输入用户名" name="username"><br><br>&nbsp; &nbsp;
+            密码:<input type="text" placeholder="请输入密码" name="password"><br><br>
+            <button type="submit" class="btn btn-success" value="提交">提 &nbsp;交</button>
+        </form>
+    </div>
+</body>
+</html>
